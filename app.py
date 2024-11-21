@@ -83,10 +83,12 @@ else:
         # Example data
         @st.cache_data(ttl=1)
         def load_data():
-            df=pd.read_csv("student_data.csv")
-            #data = np.random.rand(100, 5)
-            #df = pd.DataFrame(data, columns=['a', 'b', 'c', 'd', 'e'])
-            return df
+            a = pd.DataFrame(
+                np.random.rand(100, 5),
+                columns=['a', 'b', 'c', 'd', 'e']
+            )
+            return a
+        
             
         df = load_data()
         pr = ProfileReport(df, explorative=True)
