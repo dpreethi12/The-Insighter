@@ -16,6 +16,6 @@ pip install streamlit_pandas_profiling
 
 
 
-TO LAUNCH THE APP:
+TO LAUNCH THE APP :
 	
  streamlit run x.py
